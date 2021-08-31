@@ -1,7 +1,7 @@
 import numpy as np
 
 'Загадано число от 1 до 100, необходимо отгадать его за меньшее количество попыток'
-number = np.random.randint(1, 101)   # загаданное число
+number = np.random.randint(1, 101)         # загаданное число
 print("Загадано число от 1 до 100")
 
 def binary_search(number):                 # бинарная функция
