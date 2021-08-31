@@ -1,13 +1,14 @@
 import numpy as np
 
 'Загадано число от 1 до 100, необходимо отгадать его за меньшее количество попыток'
+
 number = np.random.randint(1, 101)         # загаданное число
 print("Загадано число от 1 до 100")
 
 def binary_search(number):                 # бинарная функция
     count = 0                              # счетчик попыток
     lower_bound = 0                        # нижняя граница
-    upper_bound = 100                      #верхняя граница
+    upper_bound = 100                      # верхняя граница
     while lower_bound <= upper_bound:
         middle = (lower_bound + upper_bound) // 2
         count += 1                         # плюсуем попытку
